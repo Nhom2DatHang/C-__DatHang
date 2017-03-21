@@ -27,16 +27,25 @@ namespace DatHangMonAn
         private void btn_datmon_Click(object sender, EventArgs e)
         {
             Frm_DatMon datmon = new Frm_DatMon();
-            datmon.MdiParent = this;
             datmon.Show();
-            datmon.Dock = DockStyle.Fill;
-            datmon.WindowState = FormWindowState.Maximized;
         }
 
         private void mnu_saoluu_Click(object sender, EventArgs e)
         {
             Frm_SaoLuuPhucHoi saoluu = new Frm_SaoLuuPhucHoi();
+            saoluu.ShowDialog();
  
+        }
+
+        private void btn_xemsua_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_menu_Click(object sender, EventArgs e)
+        {
+            Frm_Menu menu = new Frm_Menu();
+            menu.Show();
         }
 
     }

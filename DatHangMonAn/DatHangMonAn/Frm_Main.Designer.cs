@@ -66,7 +66,7 @@
             this.tileControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tileControl1.Name = "tileControl1";
             this.tileControl1.Padding = new System.Windows.Forms.Padding(27, 26, 27, 26);
-            this.tileControl1.Size = new System.Drawing.Size(1008, 655);
+            this.tileControl1.Size = new System.Drawing.Size(1008, 428);
             this.tileControl1.TabIndex = 0;
             this.tileControl1.Text = "tileControl1";
             // 
@@ -101,44 +101,44 @@
             // mnu_dangxuat
             // 
             this.mnu_dangxuat.Name = "mnu_dangxuat";
-            this.mnu_dangxuat.Size = new System.Drawing.Size(152, 22);
+            this.mnu_dangxuat.Size = new System.Drawing.Size(150, 22);
             this.mnu_dangxuat.Text = "Đăng xuất";
             // 
             // mnu_saoluu
             // 
             this.mnu_saoluu.Name = "mnu_saoluu";
-            this.mnu_saoluu.Size = new System.Drawing.Size(152, 22);
+            this.mnu_saoluu.Size = new System.Drawing.Size(150, 22);
             this.mnu_saoluu.Text = "Sao lưu";
             this.mnu_saoluu.Click += new System.EventHandler(this.mnu_saoluu_Click);
             // 
             // mnu_phuchoi
             // 
             this.mnu_phuchoi.Name = "mnu_phuchoi";
-            this.mnu_phuchoi.Size = new System.Drawing.Size(152, 22);
+            this.mnu_phuchoi.Size = new System.Drawing.Size(150, 22);
             this.mnu_phuchoi.Text = "Phục hồi";
             // 
             // mnu_doimatkhau
             // 
             this.mnu_doimatkhau.Name = "mnu_doimatkhau";
-            this.mnu_doimatkhau.Size = new System.Drawing.Size(152, 22);
+            this.mnu_doimatkhau.Size = new System.Drawing.Size(150, 22);
             this.mnu_doimatkhau.Text = "Đổi mật khẩu";
             // 
             // mnu_ketnoidulieu
             // 
             this.mnu_ketnoidulieu.Name = "mnu_ketnoidulieu";
-            this.mnu_ketnoidulieu.Size = new System.Drawing.Size(152, 22);
+            this.mnu_ketnoidulieu.Size = new System.Drawing.Size(150, 22);
             this.mnu_ketnoidulieu.Text = "Kết nối dữ liệu";
             // 
             // mnu_phanquyen
             // 
             this.mnu_phanquyen.Name = "mnu_phanquyen";
-            this.mnu_phanquyen.Size = new System.Drawing.Size(152, 22);
+            this.mnu_phanquyen.Size = new System.Drawing.Size(150, 22);
             this.mnu_phanquyen.Text = "Phân quyền";
             // 
             // mnu_thoat
             // 
             this.mnu_thoat.Name = "mnu_thoat";
-            this.mnu_thoat.Size = new System.Drawing.Size(152, 22);
+            this.mnu_thoat.Size = new System.Drawing.Size(150, 22);
             this.mnu_thoat.Text = "Thoát";
             // 
             // danhMụcToolStripMenuItem
@@ -191,7 +191,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupControl1.Location = new System.Drawing.Point(0, 26);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(283, 655);
+            this.groupControl1.Size = new System.Drawing.Size(283, 428);
             this.groupControl1.TabIndex = 15;
             this.groupControl1.Text = "Thông tin nhân viên";
             // 
@@ -216,6 +216,7 @@
             this.btn_menu.Text = "Menu";
             this.btn_menu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_menu.UseVisualStyleBackColor = true;
+            this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
             // 
             // btn_trangthaiban
             // 
@@ -244,6 +245,7 @@
             this.btn_xemsua.Text = "Xem/Sửa đặt món";
             this.btn_xemsua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_xemsua.UseVisualStyleBackColor = true;
+            this.btn_xemsua.Click += new System.EventHandler(this.btn_xemsua_Click);
             // 
             // btn_datmon
             // 
@@ -264,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 681);
+            this.ClientSize = new System.Drawing.Size(1008, 454);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.btn_menu);
             this.Controls.Add(this.btn_trangthaiban);
@@ -273,6 +275,7 @@
             this.Controls.Add(this.tileControl1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_Main";
