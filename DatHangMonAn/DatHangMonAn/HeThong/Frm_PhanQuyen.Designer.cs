@@ -70,7 +70,7 @@
             this.panel1.Controls.Add(this.cbotaikhoan);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(913, 104);
             this.panel1.TabIndex = 0;
@@ -166,6 +166,7 @@
             this.cbotaikhoan.Name = "cbotaikhoan";
             this.cbotaikhoan.Size = new System.Drawing.Size(263, 27);
             this.cbotaikhoan.TabIndex = 10;
+            this.cbotaikhoan.SelectionChangeCommitted += new System.EventHandler(this.cbotaikhoan_SelectionChangeCommitted_1);
             // 
             // dgvphanquyen
             // 
@@ -288,7 +289,7 @@
             this.Controls.Add(this.dgvphanquyen);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_PhanQuyen";
             this.Text = "Frm_PhanQuyen";
             this.Load += new System.EventHandler(this.Frm_PhanQuyen_Load);

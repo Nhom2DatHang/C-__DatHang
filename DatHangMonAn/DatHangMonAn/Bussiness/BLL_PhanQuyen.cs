@@ -1,4 +1,4 @@
-﻿using DevExpress.DataAccess.Native.Data;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,12 +16,12 @@ namespace DatHangMonAn.Bussiness
             data = new cls_DataLayer();
         }
 
-        public System.Data.DataTable LoaiTaiKhoan(ref string err)
+        public DataTable LoaiTaiKhoan(ref string err)
         {
             return data.GetDataTable(ref err, "SP_ChonTaiKhoan", CommandType.StoredProcedure, null);
         }
 
-        public System.Data.DataTable ChucNang(ref string err, string mataikhoan)
+        public DataTable ChucNang(ref string err, string mataikhoan)
         {
             return data.GetDataTable(ref err, "SP_ChucNang_Combobox", CommandType.StoredProcedure, new SqlParameter("@mataikhoan", mataikhoan));
         }
@@ -30,7 +30,7 @@ namespace DatHangMonAn.Bussiness
             return data.MyExcuteNonQuery(ref err, "SP_PhanQuyen_Insert", CommandType.StoredProcedure, new SqlParameter("@mataikhoan", _phanquyen.MaTaiKhoan), new SqlParameter("@machucnang",_phanquyen.MaChucNang), new SqlParameter("@giatriquyen",_phanquyen.GiaTriQuyen));
         }
 
-        public System.Data.DataTable PhanQuyen(ref string err, string mataikhoan)
+        public DataTable PhanQuyen(ref string err, string mataikhoan)
         {
             return data.GetDataTable(ref err, "SP_PhanQuyen_Select", CommandType.StoredProcedure, new SqlParameter("@mataikhoan", mataikhoan));
         }
