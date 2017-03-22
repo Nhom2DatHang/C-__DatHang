@@ -60,6 +60,11 @@ namespace DatHangMonAn
             docchuoiketnoitufile(path);
             cnn = new SqlConnection(connecstring);
         }
+
+        public cls_DataLayer()
+        {
+            // TODO: Complete member initialization
+        }
         //methed
         private void NoiCacThuocTinhChuoiKetNoi()
         {
