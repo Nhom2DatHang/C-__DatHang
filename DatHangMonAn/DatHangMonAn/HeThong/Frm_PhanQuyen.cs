@@ -16,5 +16,9 @@ namespace DatHangMonAn.HeThong
         {
             InitializeComponent();
         }
+        private void Frm_PhanQuyen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

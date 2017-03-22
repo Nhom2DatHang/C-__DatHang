@@ -77,6 +77,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cls_DataLayer.cs" />
     <Compile Include="DanhMuc\Frm_KhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +90,7 @@
     <Compile Include="DanhMuc\Frm_NhanVien.Designer.cs">
       <DependentUpon>Frm_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\DTO_PhanQuyen.cs" />
     <Compile Include="Form_VD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +158,9 @@
     <EmbeddedResource Include="Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\Frm_PhanQuyen.resx">
+      <DependentUpon>Frm_PhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HeThong\Frm_SaoLuuPhucHoi.resx">
       <DependentUpon>Frm_SaoLuuPhucHoi.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,7 +197,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Bussiness\" />
-    <Folder Include="DTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
