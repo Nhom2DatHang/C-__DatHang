@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DatHangMonAn.DanhMuc;
 
 namespace DatHangMonAn
 {
@@ -46,6 +47,12 @@ namespace DatHangMonAn
         {
             Frm_Menu menu = new Frm_Menu();
             menu.Show();
+        }
+
+        private void mnu_khachhang_Click(object sender, EventArgs e)
+        {
+            Frm_KhachHang khachHang = new Frm_KhachHang();
+            khachHang.Show();
         }
 
     }

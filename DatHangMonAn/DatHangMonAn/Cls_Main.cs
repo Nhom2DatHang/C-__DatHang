@@ -12,8 +12,8 @@ namespace DatHangMonAn
        public static string duongdanfileketnoi = Application.StartupPath + @"\connec.ini";
 
 
-       public static string maNV;
-       public static string tenNv;
+      // public static string maNV;
+    //   public static string tenNv;
     
     }
 

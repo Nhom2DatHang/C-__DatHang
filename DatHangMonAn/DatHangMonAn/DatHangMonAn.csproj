@@ -77,12 +77,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bussiness\BLL_KhachHang.cs" />
     <Compile Include="cls_DataLayer.cs" />
+    <Compile Include="Cls_Main.cs" />
     <Compile Include="DanhMuc\Frm_KhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DanhMuc\Frm_KhachHang.Designer.cs">
       <DependentUpon>Frm_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KhachHangThem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KhachHangThem.Designer.cs">
+      <DependentUpon>Frm_KhachHangThem.cs</DependentUpon>
     </Compile>
     <Compile Include="DanhMuc\Frm_NhanVien.cs">
       <SubType>Form</SubType>
@@ -90,6 +98,7 @@
     <Compile Include="DanhMuc\Frm_NhanVien.Designer.cs">
       <DependentUpon>Frm_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\DTO_KhachHang.cs" />
     <Compile Include="DTO\DTO_PhanQuyen.cs" />
     <Compile Include="Form_VD.cs">
       <SubType>Form</SubType>
@@ -128,6 +137,12 @@
     <Compile Include="HeThong\Frm_SaoLuuPhucHoi.Designer.cs">
       <DependentUpon>Frm_SaoLuuPhucHoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeThong\Frm_Thietlapchuoiketnoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\Frm_Thietlapchuoiketnoi.Designer.cs">
+      <DependentUpon>Frm_Thietlapchuoiketnoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrintRibbonControllerResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -155,6 +170,9 @@
     <EmbeddedResource Include="DanhMuc\Frm_KhachHang.resx">
       <DependentUpon>Frm_KhachHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_KhachHangThem.resx">
+      <DependentUpon>Frm_KhachHangThem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_VD.resx">
       <DependentUpon>Form_VD.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HeThong\Frm_SaoLuuPhucHoi.resx">
       <DependentUpon>Frm_SaoLuuPhucHoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\Frm_Thietlapchuoiketnoi.resx">
+      <DependentUpon>Frm_Thietlapchuoiketnoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrintRibbonControllerResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -198,9 +219,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Bussiness\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
