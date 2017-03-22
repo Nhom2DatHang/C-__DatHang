@@ -152,6 +152,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DanhMuc\Frm_KhachHang.resx">
+      <DependentUpon>Frm_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_VD.resx">
       <DependentUpon>Form_VD.cs</DependentUpon>
     </EmbeddedResource>
